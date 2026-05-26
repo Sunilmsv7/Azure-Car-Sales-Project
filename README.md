@@ -11,5 +11,5 @@ This project focuses on building an end-to-end Azure data engineering pipeline f
 3. Azure
     - Data Factory
     - Azure Databricks
-    - SQL Database
+    - Azure SQL Database
     - Github
