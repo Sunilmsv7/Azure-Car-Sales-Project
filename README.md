@@ -21,4 +21,4 @@ This project focuses on building an end-to-end Azure data engineering pipeline f
 
 ## Data Model
 
-![Data Model Image](Data Model.png)
+![Data Model Image](DataModel.png)
