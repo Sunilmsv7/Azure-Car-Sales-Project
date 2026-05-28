@@ -22,3 +22,9 @@ This project focuses on building an end-to-end Azure data engineering pipeline f
 ## Data Model
 
 ![Data Model Image](DataModel.png)
+
+## Project Script
+
+1. [Create Catalog and schema](db_notebook.ipynb)
+2. [Silver layer](Silver_notebook.ipynb)
+3. 
