@@ -1,0 +1,12 @@
+CREATE PROCEDURE UpdateWaterMarkTable
+@lastload varchar(200)
+AS
+BEGIN
+    --Start Transaction
+    BEGIN TRANSACTION;
+    
+	--Update the incremental  column in the table
+	Update [dbo].[watermark]
+	SET last_load = @lastload
+	COMMIT TRANSACTION;
+	END; 
