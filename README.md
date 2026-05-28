@@ -18,3 +18,7 @@ This project focuses on building an end-to-end Azure data engineering pipeline f
 
 - Initial Load Data [SalesData.csv](SalesData.csv)
 - Incremental Load Data [IncrementalSales.csv](IncrementalSales.csv)
+
+## Data Model
+
+![Data Model Image](Data Model.png)
