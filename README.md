@@ -5,6 +5,17 @@ This project focuses on building an end-to-end Azure data engineering pipeline f
 ## Architecture
 ![Project Architecture](Architecture.png)
 
+## Summary
+
+- Designed and implemented an end-to-end data engineering pipeline on Azure, processing raw data into analytics-ready datasets.
+- Built scalable ETL pipelines using Azure Data Factory with batch and incremental data ingestion strategies.
+- Developed data transformation workflows using Azure Databricks and PySpark, including joins, aggregations, and data cleansing.
+- Implemented Medallion Architecture (Bronze–Silver–Gold) to structure data processing layers and improve data reliability.
+- Modeled data using Star Schema design, enabling optimized querying and reporting.
+- Applied Slowly Changing Dimensions (SCD) techniques for handling historical data changes.
+- Managed data governance and access control using Unity Catalog in Databricks.
+- Stored and processed large datasets using Delta Lake for improved performance and reliability.
+
 ## Technology Used
 1. Programming Language : Python
 2. Scripting Language : SQL
