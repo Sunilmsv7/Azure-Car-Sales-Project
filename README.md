@@ -5,6 +5,11 @@ This project focuses on building an end-to-end Azure data engineering pipeline f
 ## Architecture
 ![Project Architecture](Architecture.png)
 
+The project follows the Medallion Architecture (Bronze → Silver → Gold) for structured data processing:
+- Bronze Layer → Raw data ingestion
+- Silver Layer → Cleaned and transformed data
+- Gold Layer → Business-ready, aggregated data
+
 ## Summary
 
 - Designed and implemented an end-to-end data engineering pipeline on Azure, processing raw data into analytics-ready datasets.
@@ -21,7 +26,8 @@ This project focuses on building an end-to-end Azure data engineering pipeline f
 2. Scripting Language : SQL
 3. Azure
     - Data Factory
-    - Azure Databricks
+    - Azure Data Lake Gen2
+    - Azure Databricks, PySpark
     - Azure SQL Database
     - Github
       
@@ -34,8 +40,28 @@ This project focuses on building an end-to-end Azure data engineering pipeline f
 
 ![Data Model Image](DataModel.png)
 
-## Project Script
+Data Modeling (Gold Layer)
+Techniques used:
+- Star Schema (Fact + Dimension tables)
+- Aggregations & business logic
+- Slowly Changing Dimensions (SCD Type 1)
+
+## Project Scripts
 
 1. [Create Catalog and schema](db_notebook.ipynb)
 2. [Silver layer](Silver_notebook.ipynb)
-3. 
+3. [Fact Table Notebook](gold_fact_sales.ipynb)
+4. [Branch Dimention Notebook](gold_dim_branch.ipynb)
+5. [Date Dimention Notebook](gold_dim_date.ipynb)
+6. [Dealer Dimention Notebook](gold_dim_dealer.ipynb)
+7. [Model Dimention Notebook](gold_dim_model.ipynb)
+
+## Key Learnings
+- Designing scalable data pipelines in Azure
+- Implementing lakehouse architecture
+- Using PySpark for distributed data processing
+- Managing data governance and access
+- Building analytics-ready datasets
+
+## Conclusion
+This project simulates a real-world enterprise data engineering workflow, demonstrating how raw data can be transformed into reliable, governed, and analytics-ready datasets using Azure ecosystem tools.
